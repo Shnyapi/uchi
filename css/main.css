@@ -1,0 +1,75 @@
+.ruler_wrap{
+    width: 875px;
+    margin: 0 auto;
+    text-align: center;
+}
+.ruler_img{
+    margin-top: 100px;
+}
+.ruler{
+    position: relative;
+}
+.ruler-arrow{
+    position: absolute;
+    border-top: 1px solid red;
+    border-radius: 50%;
+    width: 40px;
+    transform: translateY(50%);
+    bottom: 70px;
+    left: 35px;
+}
+.ruler-arrow_height{
+    padding-top: 60%;
+}
+.ruler-arrow_input{
+    padding-left: 2px;
+    width: 10px;
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    transform: translateX(-50%);
+    height: 13px;
+    border: 1px solid #000;
+    color: red;
+}
+.ruler-arrow_number{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    transform: translateX(-50%);
+}
+.ruler-arrow::after{
+    content: "";
+    background-color: red;
+    width: 1px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    transform: rotate(-45deg) translate(-3px, -2px);
+    max-height: 200px;
+}
+.ruler-arrow::before{
+    content: "";
+    background-color: red;
+    width: 1px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    transform: rotate(45deg) translate(3px, -2px);
+}
+.ruller-equation_result_input{
+    width: 15px;
+    height: 13px;
+}
+.ruller-equation_item.orange{
+    background-color: orange;
+}
+.ruller-equation_item{
+    padding: 2px 4px;
+}
+.ruller-equation_result input{
+    color: red
+}
